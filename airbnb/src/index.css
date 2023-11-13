@@ -7,15 +7,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+
 
 .divFrag {
   width: 30%;
   min-width: 300px;
+}
+.divFrag img {
+  height: 10vw;
+  width: auto;
+}
+.rental-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust the minmax value as needed */
+  gap: 20px; /* Adjust the gap value as needed */
+}
+
+h3 {
+  font-size: 1.3vw;
+  
+}
+
+p{
+  font-size: 1.1vw;
 }
 
 code {

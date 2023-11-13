@@ -1,23 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-import seattleImg from "./../img/seattle.jpeg";
-import vashonImg from "./../img/vashon.jpeg";
 
 function Listing(props) {
   return (
     <React.Fragment>
       <div class="divFrag">
-        <img src={seattleImg} alt="Listing Image" style={{ maxWidth: "25%" }} />
-
-        {/* <img
-        src={`./../img/${vashon}.jpeg`}
-        alt="Listing Image"
-        style={{ maxWidth: "25%" }}
-      /> */}
+        <img
+          src={require(`./../img/${props.imageSrc}.jpeg`)}
+          alt="Listing Image"
+          style={{ maxWidth: "25%" }}
+        />
 
         <h3>
-          {props.location} - {props.price}/night - {props.maxGuest}/max guest
-          count
+          {props.location} - {props.price}/night
+          <br />1 to {props.maxGuest} guests
         </h3>
         <p>
           <em>{props.description}</em>

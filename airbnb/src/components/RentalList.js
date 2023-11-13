@@ -1,6 +1,5 @@
 import React from "react";
 import Listing from "./Listing";
-import seattleImg from "./../img/seattle.jpeg";
 
 const mainRentalList = [
   {
@@ -35,7 +34,7 @@ const mainRentalList = [
 
 function RentalList() {
   return (
-    <React.Fragment>
+    <div className="rental-list-container">
       {mainRentalList.map((listing, index) => (
         <Listing
           description={listing.description}
@@ -46,7 +45,7 @@ function RentalList() {
           key={index}
         />
       ))}
-    </React.Fragment>
+    </div>
   );
 }
 

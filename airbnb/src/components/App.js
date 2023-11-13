@@ -7,9 +7,7 @@ function App() {
     <React.Fragment>
       <Header />
       <hr />
-      <div class="flex-container">
-        <RentalList />
-      </div>
+      <RentalList />
     </React.Fragment>
   );
 }
