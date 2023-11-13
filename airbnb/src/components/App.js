@@ -1,12 +1,15 @@
 import React from "react";
 import Header from "./Header";
-import Listing from "./Listing";
+import RentalList from "./RentalList";
 
 function App() {
   return (
     <React.Fragment>
       <Header />
-      <Listing />
+      <hr />
+      <div class="flex-container">
+        <RentalList />
+      </div>
     </React.Fragment>
   );
 }
